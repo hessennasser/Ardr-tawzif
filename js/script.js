@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
 
     if (validateForm()) {
-      submitFormData();
+      form.submit();
     }
   });
 
@@ -30,15 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const birthDate = form.querySelector("[name='birth-date']").value;
     const city = form.querySelector("[name='city']").value;
     const nationality = form.querySelector("[name='nationality']").value;
-    const sex = form.querySelector("[name='sex']").value;
-    const phoneNumber = form.querySelector("[name='phone-number']").value;
+    const sex = form.querySelector("[name='gender']").value;
+    const phoneNumber = form.querySelector("[name='phone number']").value;
     const email = form.querySelector("[name='mail']").value;
     const experience = form.querySelector("[name='experience']").value;
     const skills = form.querySelector("[name='skills']").value;
     const englishLevel = form.querySelector("[name='english-level']").value;
     const educationLevel = form.querySelector("[name='education-level']").value;
-    const workUnderPressure = form.querySelector("[name='work-under-pressure']").value;
-    const aboutYourself = form.querySelector("[name='about-yourself']").value;
+    const workUnderPressure = form.querySelector("[name='work under pressure']").value;
+    const aboutYourself = form.querySelector("[name='about yourself']").value;
 
     if (name.trim() === "") {
       showError("من فضلك، قم بإدخال اسمك.");

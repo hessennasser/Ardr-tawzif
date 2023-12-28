@@ -136,7 +136,10 @@
         <h2>أرسل طلب تقديم</h2>
       </div>
       <div class="content">
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="access_key" value="c0625a52-0cf9-4207-857e-1ec4ff6f9398">
+          <input type="hidden" name="subject" value="New Submission from ARDR GLOBAL website">
+          <input type="hidden" name="redirect" value="http://www.ardrrecruitment.com/success.html">
           <p>الاسم *</p>
           <input class="main-input" type="text" name="name" placeholder="الاسم الرباعى">
           <p>تاريخ الميلاد *</p>
@@ -146,12 +149,12 @@
           <p>الجنسية *</p>
           <input class="main-input" type="text" name="nationality" placeholder="الجنسية">
           <p>الجنس *</p>
-          <select class="main-input" name="sex" id="">
-            <option value="1" selected>ذكر</option>
-            <option value="2">أنثى</option>
+          <select class="main-input" name="gender" id="">
+            <option value="Male" selected>ذكر</option>
+            <option value="Female">أنثى</option>
           </select>
           <p>رقم الهاتف *</p>
-          <input class="main-input" type="text" name="phone-number" placeholder="رقم الهاتف">
+          <input class="main-input" type="text" name="phone number" placeholder="رقم الهاتف">
           <p>البريد الالكترونى *</p>
           <input class="main-input" type="email" name="mail" placeholder="البريد الالكترونى">
           <p>الخبرات *</p>
@@ -161,25 +164,27 @@
           <p>مستوى اللغة الانجليزية *</p>
           <select class="main-input" name="english-level" id="">
             <option value disabled selected hidden>اختر</option>
-            <option value="3">مقبول</option>
-            <option value="2">جيد جدا</option>
-            <option value="1">ممتاز</option>
+            <option value="fairly good">مقبول</option>
+            <option value="Very good">جيد جدا</option>
+            <option value="excellent">ممتاز</option>
           </select>
           <p>المستوى التعليمى *</p>
           <select class="main-input" name="education-level" id="">
             <option value disabled selected hidden>اختر</option>
-            <option value="3">ثانوى</option>
-            <option value="2">دبلوم</option>
-            <option value="1">بكالوريوس</option>
+            <option value="secondary">ثانوى</option>
+            <option value="diploma">دبلوم</option>
+            <option value="Bachelor's">بكالوريوس</option>
           </select>
           <p>التحمل تحت الضغط *</p>
-          <select class="main-input" name="work-under-pressure" id="">
+          <select class="main-input" name="work under pressure" id="">
             <option value disabled selected hidden>اختر</option>
-            <option value="1">نعم</option>
-            <option value="2">لا</option>
+            <option value="Yes">نعم</option>
+            <option value="No">لا</option>
           </select>
+          <p>تحميل السيرة الذاتية (CV) *</p>
+          <input class="main-input" type="file" name="cv" accept=".pdf, .doc, .docx">
           <p>تحدث عن نفسك *</p>
-          <textarea class="main-input" name="about-yourself" id="" cols="30" rows="10"></textarea>
+          <textarea class="main-input" name="about yourself" id="" cols="30" rows="10"></textarea>
           <input class="btn" type="submit" value="ارسال">
         </form>
       </div>
