@@ -2,21 +2,52 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>منصة اردر</title>
-  <!-- Font Awesome Cdn Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Custom CSS File -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Jomhuria&family=Montserrat:wght@500&family=Nunito:wght@200;300;400;600&family=Open+Sans:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة اردر العالمية</title>
+    <meta name="description"
+      content="منصة سعودية عالمية الكترونية تنقسم الى اقسام متعددة وتدخل في مجالات كثيرة. توفير خدمات سريعة وأسعار مناسبة بأقسام متنوعة.">
+    <meta name="keywords"
+      content="منصة اردر العالمية, منصة الكترونية, تسوق عبر الإنترنت, خدمات سريعة, أسعار مناسبة, اردر العالمية">
+    <meta name="author" content="ARDR GLOBAL">
+    <link rel="canonical" href="http://www.ardrrecruitment.com/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="منصة اردر العالمية">
+    <meta property="og:description"
+      content="منصة سعودية عالمية الكترونية تنقسم الى اقسام متعددة وتدخل في مجالات كثيرة. توفير خدمات سريعة وأسعار مناسبة بأقسام متنوعة.">
+    <meta property="og:image" content="./imgs/logo.png">
+    <meta property="og:url" content="http://www.ardrrecruitment.com/">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="منصة اردر العالمية">
+    <meta name="twitter:description"
+      content="منصة سعودية عالمية الكترونية تنقسم الى اقسام متعددة وتدخل في مجالات كثيرة. توفير خدمات سريعة وأسعار مناسبة بأقسام متنوعة.">
+    <meta name="twitter:image" content="./imgs/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./imgs/logo.png" type="image/png">
+
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Jomhuria&family=Montserrat:wght@500&family=Nunito:wght@200;300;400;600&family=Open+Sans:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <!-- Additional Custom CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
 
 <body>
   <!-- Header Starts -->
@@ -27,9 +58,9 @@
         <h4>ARDR GLOBAL</h4>
       </a>
       <ul class="nav-bar">
-        <li><a href="#index.html">الرئيسية</a></li>
-        <li><a href="#features">من نحن</a></li>
-        <li><a href="#contact">طلب وظيفة</a></li>
+        <li><a href="#index.html" aria-label="home page">الرئيسية</a></li>
+        <li><a href="#features" aria-label="features">من نحن</a></li>
+        <li><a href="#contact" aria-label="contact">طلب وظيفة</a></li>
       </ul>
       <i class="fas fa-bars toggle-menu fa-2x"></i>
     </div>
@@ -43,7 +74,7 @@
         <h1>منصة سعودية عالمية الكترونية تنقسم الى اقسام متعددة وتدخل فى مجالات كثيرة</h1>
         <p></p>
         <button class="btn">
-          <a href="#features">إعرف أكثر</a>
+          <a href="#features" aria-label="features">إعرف أكثر</a>
         </button>
       </div>
       <div class="hero-image">
@@ -136,57 +167,79 @@
         <h2>أرسل طلب تقديم</h2>
       </div>
       <div class="content">
-        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
-          <input type="hidden" name="access_key" value="c0625a52-0cf9-4207-857e-1ec4ff6f9398">
-          <input type="hidden" name="subject" value="New Submission from ARDR GLOBAL website">
-          <input type="hidden" name="redirect" value="http://www.ardrrecruitment.com/success.html">
-          <p>الاسم *</p>
-          <input class="main-input" type="text" name="name" placeholder="الاسم الرباعى">
-          <p>تاريخ الميلاد *</p>
-          <input class="main-input" type="date" name="birth-date" placeholder="تاريخ الميلاد">
-          <p>المدينة *</p>
-          <input class="main-input" type="text" name="city" placeholder="المدينة">
-          <p>الجنسية *</p>
-          <input class="main-input" type="text" name="nationality" placeholder="الجنسية">
-          <p>الجنس *</p>
-          <select class="main-input" name="gender" id="">
+        <form enctype="multipart/form-data" method="post">
+          <label for="name">الاسم *</label>
+          <input class="main-input" type="text" name="name" id="name" placeholder="الاسم الرباعى">
+
+          <label for="birth-date">تاريخ الميلاد *</label>
+          <input class="main-input" type="date" name="birth-date" id="birth-date" placeholder="تاريخ الميلاد">
+
+          <label for="city">المدينة *</label>
+          <input class="main-input" type="text" name="city" id="city" placeholder="المدينة">
+
+          <label for="nationality">الجنسية *</label>
+          <input class="main-input" type="text" name="nationality" id="nationality" placeholder="الجنسية">
+
+          <label for="gender">الجنس *</label>
+          <select class="main-input" name="gender" id="gender">
             <option value="Male" selected>ذكر</option>
             <option value="Female">أنثى</option>
           </select>
-          <p>رقم الهاتف *</p>
-          <input class="main-input" type="text" name="phone number" placeholder="رقم الهاتف">
-          <p>البريد الالكترونى *</p>
-          <input class="main-input" type="email" name="mail" placeholder="البريد الالكترونى">
-          <p>الخبرات *</p>
-          <input class="main-input" type="text" name="experience" placeholder="الخبرات">
-          <p>المهارات *</p>
-          <input class="main-input" type="text" name="skills" placeholder="مهاراتك">
-          <p>مستوى اللغة الانجليزية *</p>
-          <select class="main-input" name="english-level" id="">
+
+          <label for="phone-number">رقم الهاتف *</label>
+          <input class="main-input" type="text" name="phone number" id="phone-number" placeholder="رقم الهاتف">
+
+          <label for="mail">البريد الالكترونى *</label>
+          <input class="main-input" type="email" name="mail" id="mail" placeholder="البريد الالكترونى">
+
+          <label for="sectionsSelect">القسم المقدم اليها *</label>
+          <select class="main-input" name="sectionsSelect" id="sectionsSelect">
+            <option value disabled selected hidden>اختر</option>
+          </select>
+
+          <label for="jobsSelect">الوظيفية المقدم اليها *</label>
+          <select class="main-input" name="jobsSelect" id="jobsSelect">
+            <option value disabled selected hidden>اختر</option>
+          </select>
+
+          <label for="experience">الخبرات *</label>
+          <input class="main-input" type="text" name="experience" id="experience" placeholder="الخبرات">
+
+          <label for="skills">المهارات *</label>
+          <input class="main-input" type="text" name="skills" id="skills" placeholder="مهاراتك">
+
+          <label for="english-level">مستوى اللغة الانجليزية *</label>
+          <select class="main-input" name="english-level" id="english-level">
             <option value disabled selected hidden>اختر</option>
             <option value="fairly good">مقبول</option>
             <option value="Very good">جيد جدا</option>
             <option value="excellent">ممتاز</option>
           </select>
-          <p>المستوى التعليمى *</p>
-          <select class="main-input" name="education-level" id="">
+
+          <label for="education-level">المستوى التعليمى *</label>
+          <select class="main-input" name="education-level" id="education-level">
             <option value disabled selected hidden>اختر</option>
             <option value="secondary">ثانوى</option>
             <option value="diploma">دبلوم</option>
             <option value="Bachelor's">بكالوريوس</option>
           </select>
-          <p>التحمل تحت الضغط *</p>
-          <select class="main-input" name="work under pressure" id="">
+
+          <label for="work-under-pressure">التحمل تحت الضغط *</label>
+          <select class="main-input" name="work under pressure" id="work-under-pressure">
             <option value disabled selected hidden>اختر</option>
             <option value="Yes">نعم</option>
             <option value="No">لا</option>
           </select>
-          <p>تحميل السيرة الذاتية (CV) *</p>
-          <input class="main-input" type="file" name="cv" accept=".pdf, .doc, .docx">
-          <p>تحدث عن نفسك *</p>
-          <textarea class="main-input" name="about yourself" id="" cols="30" rows="10"></textarea>
+
+          <label for="about-yourself">تحدث عن نفسك *</label>
+          <textarea class="main-input" name="about yourself" id="about-yourself" cols="30" rows="10"></textarea>
+
+          <label for="cv-link">ارفاق رابط السيرة الذاتية (CV) *</label>
+          <input class="main-input" type="url" name="cv link" id="cv-link" accept=".pdf, .doc, .docx">
+
           <input class="btn" type="submit" value="ارسال">
         </form>
+
       </div>
     </div>
   </div>
@@ -198,11 +251,16 @@
       <!-- <h3>اردر</h3> -->
       <h4>تابعنا على منصات التواصل</h4>
       <div class="social-icons">
-        <i class="fab fa-facebook fa-2x"></i>
-        <i class="fab fa-twitter fa-2x"></i>
-        <i class="fab fa-linkedin fa-2x"></i>
+        <a href="https://www.facebook.com/profile.php?id=61554281401011&mibextid=REkXMA" target="_blank"
+          rel="noopener noreferrer" aria-label="facebook">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/ardrgroup?s=21&t=o5zhmgF9bZG_mQ47HMhFEg" target="_blank" rel="noopener noreferrer"
+          aria-label="twitter (X)">
+          <i class="fa-brands fa-x-twitter fa-2x"></i>
+        </a>
       </div>
-      <p class="copyright"> <span>اردر</span> 2023 &copy; | جميع الحقوق محفوظة</p>
+      <p class="copyright"> <span>اردر العالمية</span> 2023 &copy; | جميع الحقوق محفوظة</p>
     </div>
   </div>
   <!-- Footer Ends -->
